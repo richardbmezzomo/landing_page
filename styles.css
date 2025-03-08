@@ -1,0 +1,83 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilização da barra de navegação */
+.navbar {
+    background-color: #252221;
+    padding: 15px 20px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo img {
+    width: 202px;
+    height: 82px;
+}
+
+/* Menu */
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #c7a17a;
+}
+
+.menu-toggle {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: #1a1919;
+        width: 200px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .menu ul li {
+        padding: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
