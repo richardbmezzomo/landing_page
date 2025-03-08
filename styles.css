@@ -14,14 +14,12 @@ html {
 
 body {
     font-size: 1.6rem;
-    /* 16px */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Source Serif 4", serif;
 }
 
-/* ===== HEADER ===== */
 .navbar {
     background-color: #252221;
     padding: 1.6rem 2rem;
@@ -48,7 +46,6 @@ body {
     height: auto;
 }
 
-/* ===== MENU ===== */
 .menu {
     display: none;
     position: absolute;
@@ -87,7 +84,6 @@ body {
     display: block;
 }
 
-/* ===== HERO (MOBILE FIRST) ===== */
 .hero {
     display: flex;
     flex-direction: column;
@@ -98,7 +94,6 @@ body {
     padding: 12rem 2rem 4rem;
 }
 
-/* Hero container ocupa toda a altura disponível */
 .hero-container {
     display: flex;
     flex-direction: column;
@@ -108,7 +103,6 @@ body {
     width: 100%;
 }
 
-/* Texto Hero */
 .hero-text {
     display: flex;
     flex-direction: column;
@@ -139,7 +133,6 @@ body {
     margin-bottom: 2rem;
 }
 
-/* Galeria de Flashs */
 .flash-gallery {
     display: flex;
     flex-wrap: wrap;
@@ -161,7 +154,6 @@ body {
     display: none;
 }
 
-/* ===== PORTFÓLIO (MOBILE FIRST) ===== */
 .portfolio {
     padding: 6rem 2.5rem 2.8rem;
     text-align: center;
@@ -179,7 +171,6 @@ body {
     text-align: left;
 }
 
-/* Texto do Portfólio */
 .portfolio p {
     font-size: 1.8rem;
     line-height: 1.6;
@@ -188,7 +179,6 @@ body {
     text-align: justify;
 }
 
-/* Galeria de imagens */
 .portfolio-gallery {
     display: flex;
     justify-content: space-around;
@@ -288,30 +278,25 @@ body {
     height: auto;
 }
 
-/* Estilização das Informações */
 .footer-address,
 .footer-email {
     display: flex;
     align-items: center;
     gap: 0.8rem;
-    /* Espaço entre o ícone e o texto */
     font-size: 1.6rem;
 }
 
 .footer-address img,
 .footer-email img {
     width: 2rem;
-    /* Tamanho dos ícones */
     height: 2rem;
 }
 
-/* Ajuste do Link de E-mail */
 .footer-email a {
     color: white;
     text-decoration: none;
 }
 
-/* Ícones Sociais */
 .footer-social {
     display: flex;
     gap: 1.5rem;
@@ -329,7 +314,6 @@ body {
 }
 
 
-/* ====== TELAS MAIORES (TABLET E DESKTOP) ====== */
 @media (min-width: 768px) {
     .logo img {
         width: 20.5rem;
@@ -359,7 +343,6 @@ body {
         display: none;
     }
 
-    /* Hero alinhado no desktop */
     .hero {
         flex-direction: row;
         height: 100vh;
@@ -374,7 +357,6 @@ body {
         gap: 4rem;
     }
 
-    /* Mostrar imagem no desktop */
     .hero-image img {
         display: flex;
         border-radius: 1rem;
@@ -408,7 +390,6 @@ body {
         font-size: 2.5rem;
     }
 
-    /* Galeria no Desktop */
     .portfolio-gallery {
         margin-top: 4rem;
     }
@@ -442,7 +423,6 @@ body {
    .orcamento-form input,
    .orcamento-form textarea {
        font-size: 2rem;
-       /* Aumentando os campos */
        padding: 1.5rem;
    }
 
