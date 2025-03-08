@@ -11,6 +11,7 @@
 </head>
 <body>
 
+    <!-- HEADER -->
     <header class="navbar">
         <div class="container">
             <a href="#" class="logo">
@@ -18,9 +19,9 @@
             </a>
             <nav class="menu">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Portfólio</a></li>
-                    <li><a href="#">Orçamento</a></li>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#orcamento">Orçamento</a></li>
                 </ul>
             </nav>
             <div class="menu-toggle" id="menu-toggle">
@@ -28,7 +29,9 @@
             </div>
         </div>
     </header>
-    <section class="hero">
+
+    <!-- HERO -->
+    <section id="hero" class="hero">
         <div class="hero-container">
             <div class="hero-image">
                 <img src="./assets/modelo.svg" alt="Mulher posando">
@@ -48,6 +51,81 @@
             </div>
         </div>
     </section>
+
+    <!-- PORTFÓLIO -->
+    <section id="portfolio" class="portfolio" id="portfolio">
+        <div class="portfolio-container">
+            <h2 class="portfolio-title">Portfólio</h2>
+            <p>Trabalho com a técnica Fine Line para um estilo único de tatuagem. Aqui você encontrará <strong>projetos minimalistas, ricos em detalhes, unindo delicadeza e precisão.</strong></p>
+
+            <p>Fine Line não é <strong>apenas</strong> sobre escritas finas e delicadas, mas sim uma vertente em que <strong>expressa sentimento através da arte</strong>, com traços que aumentam sua autoestima.</p>
+
+            <p>Cada projeto é cuidadosamente trabalhado, desde a escolha do desenho até a finalização da arte. Atento a cada detalhe, você terá uma tatuagem única, de alta qualidade que será apreciada por anos.</p>
+
+            <!-- Galeria de Imagens -->
+            <div class="portfolio-gallery">
+                <img src="./assets/tattoo1.svg" alt="Tatuagem Fine Line 1">
+                <img src="./assets/tattoo2.svg" alt="Tatuagem Fine Line 2">
+                <img src="./assets/tattoo3.svg" alt="Tatuagem Fine Line 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- ORÇAMENTO -->
+    <section id="orcamento" class="orcamento">
+        <div class="orcamento-container">
+            <div class="orcamento-formulario">
+                <h2 class="orcamento-title">Solicite seu orçamento</h2>
+                <form class="orcamento-form">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Insira seu nome..." required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Insira seu e-mail..." required>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Deixe sua mensagem aqui..." required></textarea>
+
+                    <button type="submit">ENVIAR!</button>
+                </form>
+            </div>
+
+            <div class="orcamento-imagem">
+                <img src="./assets/tatuagem.svg" alt="Imagem de tatuagem sendo feita">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo -->
+            <img src="./assets/logo.svg" alt="Julia Nunes - Tattoo Artist" class="footer-logo">
+
+            <!-- Endereço -->
+            <div class="footer-address">
+                <img src="./assets/endereco.svg" alt="Ícone de localização">
+                <p>R. Profa. Enoé Schutel, 58 - Trindade, Florianópolis - SC, 88036-280</p>
+            </div>
+
+            <!-- E-mail -->
+            <div class="footer-email">
+                <img src="./assets/email.svg" alt="Ícone de e-mail">
+                <a href="mailto:jutattooer@gmail.com">jutattooer@gmail.com</a>
+            </div>
+
+            <!-- Ícones Sociais -->
+            <div class="footer-social">
+                <a href="#" aria-label="WhatsApp">
+                    <img src="./assets/whatsapp.svg" alt="WhatsApp">
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <img src="./assets/instagram.svg" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
 
 
     <script src="script.js"></script>
