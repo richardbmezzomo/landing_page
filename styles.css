@@ -106,18 +106,31 @@ body {
 .hero-text {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
     justify-content: space-around;
     flex-grow: 1;
 }
 
-.hero-text h2 {
+.hero-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hero-text-container h2 {
     font-size: 3rem;
-    font-weight: lighter;
+    font-weight: 200;
     line-height: 1.4;
     color: #252221;
-    text-shadow: 0.2rem 0.2rem 0.4rem rgba(37, 34, 33, 0.5);
+    text-align: center;
+}
+
+.hero-text-container p {
+    font-size: 1.6rem;
+    font-weight: 200;
+    line-height: 1.4;
+    color: #252221;
+    max-width: 85rem;
+    font-family: "Inter", sans-serif;
 }
 
 .hero-text .bold {
@@ -364,6 +377,7 @@ body {
 
     .hero-text h2 {
         font-size: 5rem;
+        text-align: left;
     }
 
     .flash-container {
