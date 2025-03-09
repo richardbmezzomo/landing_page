@@ -9,7 +9,6 @@
 /* ===== Ajuste para 1rem = 10px ===== */
 html {
     font-size: 62.5%;
-    /* 1rem = 10px */
 }
 
 body {
@@ -269,7 +268,6 @@ body {
     display: none;
 }
 
-/* ===== FOOTER ===== */
 .footer {
     background-color: #252221;
     color: white;
@@ -326,7 +324,7 @@ body {
     transform: scale(1.1);
 }
 
-
+/*Resposividade em telas maiores que 768px*/
 @media (min-width: 768px) {
     .logo img {
         width: 20.5rem;
